@@ -1,0 +1,490 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\views\\recipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\views\\recipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\services\\recipecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\services\\recipecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\services\\ifooddataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\services\\ifooddataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\services\\fooddataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\services\\fooddataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\services\\dtos\\fooditemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\services\\dtos\\fooditemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\services\\dtos\\fooddetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\services\\dtos\\fooddetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\models\\recipetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\models\\recipetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\models\\recipeeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\models\\recipeeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\models\\ingredientinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\models\\ingredientinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\migrations\\20250518204658_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\migrations\\20250518204658_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\recipeapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\recipeapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|c:\\users\\x1\\source\\repos\\mvc\\projekt\\recipeapp\\recipeapp\\recipeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{15FCCF73-F1E1-4B48-A7B4-B532DB5ECF7E}|RecipeApp\\RecipeApp.csproj|solutionrelative:recipeapp\\recipeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 456,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "RecipeApp\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "RecipeApp\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T12:58:09.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecipeApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RecipeApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T12:56:51.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "RecipeApp\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T12:52:12.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250518204658_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Migrations\\20250518204658_InitialCreate.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Migrations\\20250518204658_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Migrations\\20250518204658_InitialCreate.cs",
+              "RelativeToolTip": "RecipeApp\\Migrations\\20250518204658_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T12:52:01.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IngredientInput.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\IngredientInput.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Models\\IngredientInput.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\IngredientInput.cs",
+              "RelativeToolTip": "RecipeApp\\Models\\IngredientInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T12:51:42.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RecipeCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\RecipeCalculator.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Services\\RecipeCalculator.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\RecipeCalculator.cs",
+              "RelativeToolTip": "RecipeApp\\Services\\RecipeCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T21:52:27.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IFoodDataService.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\IFoodDataService.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Services\\IFoodDataService.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\IFoodDataService.cs",
+              "RelativeToolTip": "RecipeApp\\Services\\IFoodDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T21:37:36.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FoodDataService.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\FoodDataService.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Services\\FoodDataService.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\FoodDataService.cs",
+              "RelativeToolTip": "RecipeApp\\Services\\FoodDataService.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAHoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T21:12:18.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "RecipeApp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "RecipeApp\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-18T21:05:22.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RecipeApp",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\RecipeApp.csproj",
+              "RelativeDocumentMoniker": "RecipeApp\\RecipeApp.csproj",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\RecipeApp.csproj",
+              "RelativeToolTip": "RecipeApp\\RecipeApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-18T21:05:14.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Recipes\\Create.cshtml",
+              "RelativeDocumentMoniker": "RecipeApp\\Views\\Recipes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Recipes\\Create.cshtml",
+              "RelativeToolTip": "RecipeApp\\Views\\Recipes\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwH8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T20:20:33.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "RecipeApp\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "RecipeApp\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T20:20:30.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "RecipeApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "RecipeApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T20:19:54.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Recipes\\Index.cshtml",
+              "RelativeDocumentMoniker": "RecipeApp\\Views\\Recipes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Recipes\\Index.cshtml",
+              "RelativeToolTip": "RecipeApp\\Views\\Recipes\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T20:19:08.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RecipeApp.csproj",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\RecipeApp.csproj",
+              "RelativeDocumentMoniker": "RecipeApp\\RecipeApp.csproj",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\RecipeApp.csproj",
+              "RelativeToolTip": "RecipeApp\\RecipeApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-18T20:03:30.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RecipeApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:02:12.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Controllers\\RecipesController.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "RecipeApp\\Controllers\\RecipesController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwFIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:02:41.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RecipeEditViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\RecipeEditViewModel.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Models\\RecipeEditViewModel.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\RecipeEditViewModel.cs",
+              "RelativeToolTip": "RecipeApp\\Models\\RecipeEditViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:00:30.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Recipes\\Details.cshtml",
+              "RelativeDocumentMoniker": "RecipeApp\\Views\\Recipes\\Details.cshtml",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Views\\Recipes\\Details.cshtml",
+              "RelativeToolTip": "RecipeApp\\Views\\Recipes\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T19:54:35.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FoodDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\DTOs\\FoodDetailDto.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Services\\DTOs\\FoodDetailDto.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\DTOs\\FoodDetailDto.cs",
+              "RelativeToolTip": "RecipeApp\\Services\\DTOs\\FoodDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:52:06.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FoodItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\DTOs\\FoodItemDto.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Services\\DTOs\\FoodItemDto.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Services\\DTOs\\FoodItemDto.cs",
+              "RelativeToolTip": "RecipeApp\\Services\\DTOs\\FoodItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:52:04.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "RecipeApp\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:51:39.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RecipeTag.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\RecipeTag.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Models\\RecipeTag.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\RecipeTag.cs",
+              "RelativeToolTip": "RecipeApp\\Models\\RecipeTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:51:34.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RecipeIngredient.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\RecipeIngredient.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Models\\RecipeIngredient.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\RecipeIngredient.cs",
+              "RelativeToolTip": "RecipeApp\\Models\\RecipeIngredient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:51:28.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\Recipe.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Models\\Recipe.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Models\\Recipe.cs",
+              "RelativeToolTip": "RecipeApp\\Models\\Recipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:51:09.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "RecipeApp\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:50:46.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\appsettings.json",
+              "RelativeDocumentMoniker": "RecipeApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\appsettings.json",
+              "RelativeToolTip": "RecipeApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-18T19:49:50.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Program.cs",
+              "RelativeDocumentMoniker": "RecipeApp\\Program.cs",
+              "ToolTip": "C:\\Users\\X1\\source\\repos\\MVC\\Projekt\\RecipeApp\\RecipeApp\\Program.cs",
+              "RelativeToolTip": "RecipeApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:47:59.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

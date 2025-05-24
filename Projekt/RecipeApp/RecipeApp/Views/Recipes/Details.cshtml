@@ -1,0 +1,25 @@
+﻿@model RecipeApp.Models.Recipe
+@{
+    ViewData["Title"] = Model.Name;
+}
+<h1>@Model.Name</h1>
+
+<p><strong>Prep time:</strong> @Model.PrepTime min</p>
+<p><strong>Total kcal:</strong> @Model.TotalKcal:F1</p>
+<p>
+    <strong>Tags:</strong>
+    @string.Join(", ", Model.Tags.Select(t => t.Tag))
+</p>
+
+<h4>Ingredients</h4>
+<ul>
+    @foreach (var ing in Model.Ingredients)
+    {
+        <li>
+            @ing.Description — @ing.WeightInGrams:F0 g
+        </li>
+    }
+</ul>
+
+<h4>Instructions</h4>
+<p>@Model.Instructions</p>

@@ -1,0 +1,177 @@
+﻿@model RecipesApp.Models.Recipe
+
+@{
+    ViewData["Title"] = "New Recipe";
+}
+
+
+<div class="container mt-5">
+   
+    <h2 class="mb-4 fw-bold display-5">Nowy przepis</h2>
+
+    <form asp-action="Create" method="post" autocomplete="off">
+       
+        @Html.AntiForgeryToken()
+
+       
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="row g-3">
+            <div class="col-12">
+                <label asp-for="Name" class="form-label fw-semibold">Nazwa przepisu</label>
+                <input asp-for="Name" class="form-control" autocomplete="off" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="Instructions" class="form-label fw-semibold">Instrukcje</label>
+                <textarea asp-for="Instructions" class="form-control" rows="4" autocomplete="off"></textarea>
+                <span asp-validation-for="Instructions" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="PrepTime" class="form-label fw-semibold">Czas przygotowania (min)</label>
+                <input asp-for="PrepTime" type="number" min="0" class="form-control" autocomplete="off" />
+                <span asp-validation-for="PrepTime" class="text-danger"></span>
+            </div>
+        </div>
+
+        <h4 class="mt-5 mb-3 fw-bold">Składniki</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle" id="ingredientsTable">
+                <thead class="table-light">
+                    <tr>
+                        <th>Wyszukaj składnik</th>
+                        <th style="width:15%;">Waga (g)</th>
+                        <th style="width:15%;">Kcal</th>
+                        <th style="width:10%;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="ingredient-row">
+                        <td>
+                            <input type="text"
+                                   name="selectedIngredients[]"
+                                   class="form-control ingredient-search"
+                                   placeholder="Szukaj składnika..."
+                                   autocomplete="off"
+                                   list="ingredientOptions_1" />
+                            <datalist id="ingredientOptions_1" class="search-options"></datalist>
+                        </td>
+                        <td>
+                            <input type="number"
+                                   name="ingredientWeights[]"
+                                   class="form-control weight-input"
+                                   value="0"
+                                   min="0"
+                                   autocomplete="off" />
+                        </td>
+                        <td>
+                            <input type="text"
+                                   name="ingredientKcals[]"
+                                   class="form-control kcal-display"
+                                   value="0"
+                                   readonly
+                                   tabindex="-1" />
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-danger remove-row">Usuń</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button type="button" id="addIngredient" class="btn btn-outline-secondary mb-4">+ Dodaj składnik</button>
+
+    
+        <div class="mb-4">
+            <label class="form-label fw-semibold">Tagi</label>
+            <div class="d-flex flex-wrap gap-3 mt-2">
+                @foreach (SelectListItem tag in ViewBag.AllTags)
+                {
+                    <div class="form-check">
+                        <input type="checkbox"
+                               class="form-check-input"
+                               name="selectedTags"
+                               id="tag-@tag.Value"
+                               value="@tag.Value"
+                               autocomplete="off"
+                        @(tag.Selected ? "checked" : "") />
+                        <label class="form-check-label text-capitalize" for="tag-@tag.Value">
+                            @tag.Text
+                        </label>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-lg px-4">Zapisz przepis</button>
+    </form>
+</div>
+
+@section Scripts {
+
+    <script>
+        let rowCounter = 2;
+        const apiUrl = '/api/ingredientsapi/search?q=';
+        const tableBody = document.querySelector('#ingredientsTable tbody');
+
+        function wireRow(row) {
+            const searchInput = row.querySelector('.ingredient-search');
+            const dataList = row.querySelector('.search-options');
+            const uniqueId = 'ingredientOptions_' + (rowCounter++);
+            dataList.id = uniqueId;
+            searchInput.setAttribute('list', uniqueId);
+
+            const weightInput = row.querySelector('.weight-input');
+            const kcalDisplay = row.querySelector('.kcal-display');
+            let kcalPer100 = 0;
+
+      
+            searchInput.addEventListener('keyup', async () => {
+                const q = searchInput.value.trim();
+                if (!q) return dataList.innerHTML = '';
+                const resp = await fetch(apiUrl + encodeURIComponent(q));
+                const items = await resp.json();
+                dataList.innerHTML = items.map(i =>
+                    `<option data-kcal="${i.kcal}" value="${i.name}"></option>`
+                ).join('');
+            });
+
+            //  Ustawianie kcal po wyborze składniku
+            searchInput.addEventListener('change', () => {
+                const opt = Array.from(dataList.options)
+                    .find(o => o.value === searchInput.value);
+                kcalPer100 = opt ? parseFloat(opt.dataset.kcal) : 0;
+                computeKcal();
+            });
+
+            weightInput.addEventListener('input', computeKcal);
+
+            function computeKcal() {
+                const w = parseFloat(weightInput.value) || 0;
+                const total = (kcalPer100 * w) / 100;
+                kcalDisplay.value = isNaN(total) ? '' : total.toFixed(2);
+            }
+
+
+            row.querySelector('.remove-row')
+                .addEventListener('click', () => row.remove());
+        }
+
+        wireRow(tableBody.querySelector('.ingredient-row'));
+
+        
+        document.getElementById('addIngredient')
+            .addEventListener('click', () => {
+                const newRow = tableBody.querySelector('.ingredient-row').cloneNode(true);
+                newRow.querySelector('.ingredient-search').value = '';
+                newRow.querySelector('.weight-input').value = 0;
+                newRow.querySelector('.kcal-display').value = 0;
+                tableBody.appendChild(newRow);
+                wireRow(newRow);
+            });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

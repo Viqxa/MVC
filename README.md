@@ -34,6 +34,8 @@ Celem projektu jest stworzenie intuicyjnej aplikacji umożliwiającej użytkowni
 ![image](https://github.com/user-attachments/assets/6119d30a-b224-485a-9829-cad204c0c672)
 
 ---
+### Wszystkie przepisy
+![image](https://github.com/user-attachments/assets/8280ce1c-7020-4a2a-abc8-e6f8256f7656)
 
 ### Dodawanie nowego przepisu + składniki – na podstawie API  
 ![image](https://github.com/user-attachments/assets/ca2ab91a-5557-46ad-82b1-a206241c50a8)  

@@ -30,15 +30,40 @@ Celem projektu jest stworzenie intuicyjnej aplikacji umożliwiającej użytkowni
 ---
 
 ## Spis treści
+### Strona główna  
+![image](https://github.com/user-attachments/assets/6119d30a-b224-485a-9829-cad204c0c672)
 
-![image](https://github.com/user-attachments/assets/6119d30a-b224-485a-9829-cad204c0c672)  
+---
+
+### Dodawanie nowego przepisu + składniki – na podstawie API  
 ![image](https://github.com/user-attachments/assets/ca2ab91a-5557-46ad-82b1-a206241c50a8)  
 ![image](https://github.com/user-attachments/assets/1efc2f13-59da-4445-be7b-d02dc81a9f71)  
-![image](https://github.com/user-attachments/assets/99e38f10-aede-4400-81a5-20fa189d5e13)  
-![image](https://github.com/user-attachments/assets/025f95a7-c159-44c8-b15d-6b80b63200a3)  
-![image](https://github.com/user-attachments/assets/9c92d1a6-ab81-4e34-aa2b-a6c5c41b3254)  
-![image](https://github.com/user-attachments/assets/0fdddc4a-2396-4cf1-85e5-07689188985d)  
-![image](https://github.com/user-attachments/assets/7282d52e-ec14-4ca4-8997-2a1a4125a154)  
+![image](https://github.com/user-attachments/assets/99e38f10-aede-4400-81a5-20fa189d5e13)
+
+---
+
+### Detale przepisu  
+![image](https://github.com/user-attachments/assets/025f95a7-c159-44c8-b15d-6b80b63200a3)
+
+---
+
+### Edycja  
+![image](https://github.com/user-attachments/assets/9c92d1a6-ab81-4e34-aa2b-a6c5c41b3254)
+
+---
+
+### Rejestracja  
+![image](https://github.com/user-attachments/assets/7a3c4af8-3310-4ddd-8f51-b6c0e8013f9f)
+
+---
+
+### Profil  
+![image](https://github.com/user-attachments/assets/0fdddc4a-2396-4cf1-85e5-07689188985d)
+
+---
+
+### Przepisy tylko zalogowanego użytkownika  
+![image](https://github.com/user-attachments/assets/7282d52e-ec14-4ca4-8997-2a1a4125a154)
 
 ---
 

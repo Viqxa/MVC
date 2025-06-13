@@ -1,0 +1,208 @@
+﻿@model RecipesApp.Models.Recipe
+
+@{
+    ViewData["Title"] = "Edit Recipe";
+}
+
+<h2 class="mt-4 mb-3 fw-bold" style="font-size:2.3rem;">Edit Recipe</h2>
+
+<form asp-action="Edit" method="post" autocomplete="off">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="RecipeId" />
+    <input type="hidden" asp-for="CreatedBy" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label fw-semibold">Name</label>
+        <input asp-for="Name" class="form-control" autocomplete="off" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Instructions" class="form-label fw-semibold">Instructions</label>
+        <textarea asp-for="Instructions" class="form-control" rows="3" autocomplete="off"></textarea>
+        <span asp-validation-for="Instructions" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PrepTime" class="form-label fw-semibold">Prep Time (min)</label>
+        <input asp-for="PrepTime" class="form-control" type="number" min="0" autocomplete="off" />
+        <span asp-validation-for="PrepTime" class="text-danger"></span>
+    </div>
+
+    <h4 class="mt-4 mb-2 fw-bold">Ingredients</h4>
+    <table class="table align-middle" id="ingredientsTable">
+        <thead>
+            <tr>
+                <th style="width:48%;">Search</th>
+                <th style="width:20%;">Weight (g)</th>
+                <th style="width:20%;">Kcal</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.RecipeIngredients.Count; i++)
+            {
+                var ri = Model.RecipeIngredients.ElementAt(i);
+                <tr class="ingredient-row">
+                    <td>
+                        <input type="text"
+                               name="selectedIngredients[]"
+                               class="form-control ingredient-search"
+                               value="@ri.Ingredient?.Name"
+                               autocomplete="off"
+                               list="ingredientOptions_@(i+1)" />
+                        <datalist id="ingredientOptions_@(i+1)" class="search-options"></datalist>
+                    </td>
+                    <td>
+                        <input type="number"
+                               name="ingredientWeights[]"
+                               class="form-control weight-input"
+                               value="@ri.WeightInGrams"
+                               min="0"
+                               autocomplete="off" />
+                    </td>
+                    <td>
+                        <input type="text"
+                               name="ingredientKcals[]"
+                               class="form-control kcal-display"
+                               value="@ri.KcalPerPortion.ToString("F2")"
+                               readonly
+                               tabindex="-1" />
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger remove-row">Remove</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="button" id="addIngredient" class="btn btn-secondary mb-3">+ Add Ingredient</button>
+
+    <div class="mb-3">
+        <label class="fw-semibold">Tags</label>
+        <div class="d-flex flex-wrap gap-2 mt-1">
+            @foreach (SelectListItem tag in ViewBag.AllTags)
+            {
+                <div>
+                    <input type="checkbox"
+                           class="form-check-input me-1"
+                           name="selectedTags"
+                           id="tag-@tag.Value"
+                           value="@tag.Value"
+                           autocomplete="off"
+                    @(tag.Selected ? "checked" : "") />
+                    <label class="form-check-label" for="tag-@tag.Value" style="text-transform: lowercase;">
+                        @tag.Text
+                    </label>
+                </div>
+            }
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3" style="padding: 0.5rem 2.5rem; font-size:1.1rem;">Save Recipe</button>
+</form>
+@section Scripts {
+    <script>
+       
+        let rowCounter = document.querySelectorAll('.ingredient-row').length + 1;
+        const apiUrl = '/api/ingredientsapi/search?q=';
+        const table = document.getElementById('ingredientsTable').getElementsByTagName('tbody')[0];
+
+        function wireRow(row) {
+            const searchInput = row.querySelector('.ingredient-search');
+            const dataList = row.querySelector('.search-options');
+            const weightInput = row.querySelector('.weight-input');
+            const kcalDisplay = row.querySelector('.kcal-display');
+            let kcalPer100 = 0;
+
+            const uniqueId = 'ingredientOptions_' + (rowCounter++);
+            dataList.id = uniqueId;
+            searchInput.setAttribute('list', uniqueId);
+
+            
+            searchInput.addEventListener('input', async () => {
+                const q = searchInput.value.trim();
+                if (!q) {
+                    dataList.innerHTML = '';
+                    return;
+                }
+                const resp = await fetch(apiUrl + encodeURIComponent(q));
+                const items = await resp.json();
+                dataList.innerHTML = items.map(i =>
+                    `<option data-kcal="${i.kcal}" value="${i.name}"></option>`
+                ).join('');
+            });
+
+           
+            searchInput.addEventListener('change', () => {
+                const opt = Array.from(dataList.options)
+                    .find(o => o.value === searchInput.value);
+                if (opt) {
+                    kcalPer100 = parseFloat(opt.dataset.kcal) || 0;
+                    computeKcal();
+                } else {
+                  
+                    fetch(apiUrl + encodeURIComponent(searchInput.value))
+                        .then(resp => resp.json())
+                        .then(items => {
+                            const match = items.find(i => i.name === searchInput.value);
+                            kcalPer100 = match ? parseFloat(match.kcal) : 0;
+                            computeKcal();
+                        });
+                }
+            });
+
+            weightInput.addEventListener('input', computeKcal);
+
+            function computeKcal() {
+                const w = parseFloat(weightInput.value) || 0;
+                const total = (kcalPer100 * w) / 100;
+                kcalDisplay.value = isNaN(total) ? '' : total.toFixed(2);
+            }
+
+         
+            row.querySelector('.remove-row')
+                .addEventListener('click', () => row.remove());
+
+            
+            if (searchInput.value) {
+                fetch(apiUrl + encodeURIComponent(searchInput.value))
+                    .then(resp => resp.json())
+                    .then(items => {
+                        const match = items.find(i => i.name === searchInput.value);
+                        kcalPer100 = match ? parseFloat(match.kcal) : 0;
+                        computeKcal();
+                    });
+            }
+        }
+
+        document.querySelectorAll('.ingredient-row').forEach(wireRow);
+
+
+        document.getElementById('addIngredient')
+            .addEventListener('click', () => {
+                const newRow = table.querySelector('.ingredient-row').cloneNode(true);
+
+                
+                const newSearch = newRow.querySelector('.ingredient-search');
+                const newWeight = newRow.querySelector('.weight-input');
+                const newKcal = newRow.querySelector('.kcal-display');
+                newSearch.value = '';
+                newWeight.value = 0;
+                newKcal.value = 0;
+
+             
+                const newDataList = document.createElement('datalist');
+                newDataList.className = 'search-options';
+                newRow.querySelector('.search-options').replaceWith(newDataList);
+
+                table.appendChild(newRow);
+                wireRow(newRow);
+            });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

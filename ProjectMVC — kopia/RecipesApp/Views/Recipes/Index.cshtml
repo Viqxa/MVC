@@ -1,0 +1,47 @@
+﻿@model IEnumerable<RecipesApp.Models.Recipe>
+
+@{
+    ViewData["Title"] = "All Recipes";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New Recipe</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Prep Time</th>
+            <th>Total kcal</th>
+            <th>Tags</th>
+            <th>Created By</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var recipe in Model)
+        {
+            <tr>
+                <td>@recipe.Name</td>
+                <td>@recipe.PrepTime</td>
+                <td>
+                    @(
+                        recipe.RecipeIngredients
+                        .Sum(ri => ri.KcalPerPortion)
+                        .ToString("F2")
+                        )
+                </td>
+                <td>@string.Join(", ", recipe.Tags.Select(t => t.TagName))</td>
+                <td>@recipe.CreatedBy</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@recipe.RecipeId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@recipe.RecipeId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@recipe.RecipeId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

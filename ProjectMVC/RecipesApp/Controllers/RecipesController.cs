@@ -8,13 +8,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RecipesApp.Data;
 using RecipesApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RecipesApp.Controllers
 {
-    public class Recipes1Controller : Controller
+    public class RecipesController : Controller
     {
         private readonly RecipesContext _context;
-        public Recipes1Controller(RecipesContext context) => _context = context;
+        public RecipesController(RecipesContext context) => _context = context;
 
         // GET: Recipes1
         public async Task<IActionResult> Index()
@@ -62,22 +63,30 @@ namespace RecipesApp.Controllers
             {
                 ModelState.AddModelError("", "Each ingredient must have a name. Please fill in all ingredient rows.");
             }
+
+            //walidacjiea składników 
+            var count = selectedIngredients?.Length ?? 0;
+            if (ingredientWeights == null || ingredientWeights.Length < count)
+            {
+                ModelState.AddModelError("",
+                    "Please enter a weight for each ingredient.");
+            }
+            if (ingredientKcals == null || ingredientKcals.Length < count)
+            {
+                ModelState.AddModelError("",
+                    "Calories weren’t calculated correctly. Try editing each ingredient’s weight.");
+            }
+
             if (ModelState.IsValid)
             {
-          
-                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-                if (userIdClaim != null)
-                {
-                    recipe.CreatedBy = int.Parse(userIdClaim.Value);
-                }
-                else
-                {
-                    recipe.CreatedBy = 0;
-                }
+
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                recipe.CreatedBy = userId != null ? int.Parse(userId) : 0;
+
 
                 //  RecipeIngredients
                 recipe.RecipeIngredients = new List<RecipeIngredient>();
-                for (int i = 0; i < selectedIngredients.Length; i++)
+                for (int i = 0;  i < count; i++)
                 {
                     var ingName = selectedIngredients[i];
                     var weight = ingredientWeights[i];
@@ -97,7 +106,7 @@ namespace RecipesApp.Controllers
                     {
                         IngredientId = ing.IngredientId,
                         WeightInGrams = weight,
-                        KcalPerPortion = (float)Math.Round(ing.KcalPer100g * weight / 100.0, 2)
+                        KcalPerPortion = (float)Math.Round(kcal100, 2)
 
                     });
                 }
@@ -177,7 +186,7 @@ namespace RecipesApp.Controllers
                 existing.PrepTime = recipe.PrepTime;
                 existing.CreatedBy = recipe.CreatedBy;
 
-                // odwieznsir tags
+                // odwswieżenie tags
                 existing.Tags.Clear();
                 foreach (var tagId in selectedTags ?? Array.Empty<int>())
                 {
@@ -190,8 +199,8 @@ namespace RecipesApp.Controllers
                 for (int i = 0; i < selectedIngredients.Length; i++)
                 {
                     var ingName = selectedIngredients[i];
-                    var weight = ingredientWeights[i];
-                    var kcal100 = ingredientKcals[i];
+                    var weight = ingredientWeights.Length > i ? ingredientWeights[i] : 0;
+                    var kcal100 = ingredientKcals.Length > i ? ingredientKcals[i] : 0;
 
 
                     var ing = await _context.Ingredients
@@ -206,12 +215,24 @@ namespace RecipesApp.Controllers
                     {
                         IngredientId = ing.IngredientId,
                         WeightInGrams = weight,
-                        KcalPerPortion = (float)Math.Round(ing.KcalPer100g * weight / 100.0, 2)
+                        KcalPerPortion = (float)Math.Round(kcal100, 2)//per 100g
                     });
                 }
 
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+            }
+
+            var count = selectedIngredients?.Length ?? 0;
+            recipe.RecipeIngredients = new List<RecipeIngredient>(count);
+            for (int i = 0; i < count; i++)
+            {
+                recipe.RecipeIngredients.Add(new RecipeIngredient
+                {
+                    Ingredient = new Ingredient { Name = selectedIngredients[i] },
+                    WeightInGrams = ingredientWeights.Length > i ? ingredientWeights[i] : 0,
+                    KcalPerPortion = ingredientKcals.Length > i ? (float)Math.Round(ingredientKcals[i], 2) : 0
+                });
             }
 
             ViewBag.AllTags = new MultiSelectList(
@@ -252,6 +273,19 @@ namespace RecipesApp.Controllers
                 await _context.SaveChangesAsync();
             }
             return RedirectToAction(nameof(Index));
+        }
+        //zalogowani widzą swoje przepisy
+        [Authorize]
+        public async Task<IActionResult> MyRecipes()
+        {
+
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            var recipes = await _context.Recipes
+                .Include(r => r.RecipeIngredients).ThenInclude(ri => ri.Ingredient)
+                .Include(r => r.Tags)
+                .Where(r => r.CreatedBy == userId) 
+                .ToListAsync();
+            return View("Index", recipes);
         }
 
         private bool RecipeExists(int id) =>

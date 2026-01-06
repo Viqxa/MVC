@@ -11,7 +11,7 @@ using RecipesApp.Data;
 namespace RecipesApp.Migrations
 {
     [DbContext(typeof(RecipesContext))]
-    [Migration("20250608105944_InitialCreate")]
+    [Migration("20250612231208_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -176,7 +176,8 @@ namespace RecipesApp.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -184,7 +185,8 @@ namespace RecipesApp.Migrations
 
                     b.Property<string>("Surname")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("UserId");
 

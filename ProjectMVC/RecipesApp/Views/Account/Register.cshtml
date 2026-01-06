@@ -1,0 +1,45 @@
+﻿@model RecipesApp.Models.User
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<form asp-controller="Account" asp-action="Register" method="post">
+    @Html.AntiForgeryToken()
+
+    <!-- Show every validation error -->
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label for="Name" class="form-label">First Name</label>
+        <input asp-for="Name" class="form-control" placeholder="e.g. John" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Surname" class="form-label">Surname</label>
+        <input asp-for="Surname" class="form-control" placeholder="e.g. Doe" />
+        <span asp-validation-for="Surname" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email Address</label>
+        <input asp-for="Email" class="form-control" placeholder="e.g. you@example.com" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Password" class="form-label">Password</label>
+        <input asp-for="Password" type="password" class="form-control" placeholder="Choose a secure password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

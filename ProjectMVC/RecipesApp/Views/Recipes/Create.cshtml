@@ -7,7 +7,7 @@
 
 <div class="container mt-5">
    
-    <h2 class="mb-4 fw-bold display-5">Nowy przepis</h2>
+    <h2 class="mb-4 fw-bold display-5">New recipe</h2>
 
     <form asp-action="Create" method="post" autocomplete="off">
        
@@ -18,28 +18,28 @@
 
         <div class="row g-3">
             <div class="col-12">
-                <label asp-for="Name" class="form-label fw-semibold">Nazwa przepisu</label>
+                <label asp-for="Name" class="form-label fw-semibold">Name</label>
                 <input asp-for="Name" class="form-control" autocomplete="off" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="col-12">
-                <label asp-for="Instructions" class="form-label fw-semibold">Instrukcje</label>
+                <label asp-for="Instructions" class="form-label fw-semibold">Instructions</label>
                 <textarea asp-for="Instructions" class="form-control" rows="4" autocomplete="off"></textarea>
                 <span asp-validation-for="Instructions" class="text-danger"></span>
             </div>
             <div class="col-md-4">
-                <label asp-for="PrepTime" class="form-label fw-semibold">Czas przygotowania (min)</label>
+                <label asp-for="PrepTime" class="form-label fw-semibold">Preparation time </label>
                 <input asp-for="PrepTime" type="number" min="0" class="form-control" autocomplete="off" />
                 <span asp-validation-for="PrepTime" class="text-danger"></span>
             </div>
         </div>
 
-        <h4 class="mt-5 mb-3 fw-bold">Składniki</h4>
+        <h4 class="mt-5 mb-3 fw-bold">Ingredients</h4>
         <div class="table-responsive">
             <table class="table table-bordered align-middle" id="ingredientsTable">
                 <thead class="table-light">
                     <tr>
-                        <th>Wyszukaj składnik</th>
+                        <th>Search for ingredient</th>
                         <th style="width:15%;">Waga (g)</th>
                         <th style="width:15%;">Kcal</th>
                         <th style="width:10%;"></th>
@@ -80,11 +80,11 @@
             </table>
         </div>
 
-        <button type="button" id="addIngredient" class="btn btn-outline-secondary mb-4">+ Dodaj składnik</button>
+        <button type="button" id="addIngredient" class="btn btn-outline-secondary mb-4">+ Add Ingredient</button>
 
     
         <div class="mb-4">
-            <label class="form-label fw-semibold">Tagi</label>
+            <label class="form-label fw-semibold">Tags</label>
             <div class="d-flex flex-wrap gap-3 mt-2">
                 @foreach (SelectListItem tag in ViewBag.AllTags)
                 {
@@ -104,7 +104,7 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-success btn-lg px-4">Zapisz przepis</button>
+        <button type="submit" class="btn btn-success btn-lg px-4">Save</button>
     </form>
 </div>
 
